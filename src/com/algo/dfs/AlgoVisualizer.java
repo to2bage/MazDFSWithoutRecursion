@@ -34,7 +34,7 @@ public class AlgoVisualizer {
     private void run() {
         this.renderData();          // render
 
-        this.goBfsWithoutRecursion(
+        this.goDfsWithoutRecursion(
                 this.mzData.getRowOfEntrance(),
                 this.mzData.getColOfEntrance()
         );
@@ -42,7 +42,7 @@ public class AlgoVisualizer {
         this.renderData();          // render
     }
 
-    private void goBfsWithoutRecursion(int row, int col) {
+    private void goDfsWithoutRecursion(int row, int col) {
         boolean hasResult = false;
 
         if (!this.mzData.inArea(row, col)) {
